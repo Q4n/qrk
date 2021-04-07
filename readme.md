@@ -104,18 +104,6 @@ mokutil 驱动签名校验, 但是这里需要重启才能生效
 
 - [x] ### 开机启动
 
-隐藏启动脚本
-
-必须从shell脚本运行
-
-1. 将。ko复制到 路径
-
-2. /etc/init.d/e1000x 启动脚本
-
-    （貌似不能成功加载）
-
-
-
  	1. `/lib/modules/$(KERNEL)/kernel/drivers/​$(DRIVER)`放入.ko
  	2. `/etc/modules-load.d/$(DRIVER).conf` 写入 qrk
  	3. 执行depmod
